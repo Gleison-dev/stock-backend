@@ -30,4 +30,6 @@ const testConnection = async () => {
   }
 };
 
+sequelize.sync({ force: true });
+
 export { sequelize, testConnection };
